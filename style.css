@@ -38,6 +38,7 @@ header {
   color: #ffffff;
   padding: 15px 40px;
   white-space: nowrap;
+  z-index: 1000;
 }
 
 header .logo {
@@ -237,6 +238,7 @@ main {
   display: block;
   width: 100%;
   transition: background-color 0.1s ease;
+  
 }
 
 .btn-add:hover {

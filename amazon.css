@@ -1,0 +1,294 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #fff; /* Sfondo bianco come da tuo reset */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ==========================================
+------------------- HEADER-----------------
+   ========================================== */
+   
+header {
+  background-color: #131921; /* HEADER: #131921 */
+  color: #ffffff;
+  padding: 15px 40px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+header .logo {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  width: 15%;
+}
+
+header .search-bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+  font-size: 0; 
+}
+
+header .search-bar input {
+  width: 85%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+header .search-bar button {
+  background-color: #FEBD69; /* PULSANTE CERCA: #FEBD69 */
+  color: #111;
+  width: 15%;
+  padding: 10px 0;
+  border-radius: 0 4px 4px 0;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+header .header-nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  text-align: right;
+}
+
+header .header-nav a {
+  font-size: 14px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .header-nav a:last-child {
+  background-color: #232F3E; /* PULSANTE CARRELLO: #232F3E */
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+/* ==========================================
+   ------------HERO SECTION-------------
+   ========================================== */
+.hero {
+  background-color: #303F51; /* HERO SECTION: #303F51 */
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+}
+
+/* ==========================================
+   ------STRUTTURA CONTENUTO GENERALE-------
+   ========================================== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+
+.categorie, .prodotti {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.categorie h2, .prodotti h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ==========================================
+   ------SEZIONE CATEGORIE GRIGLIA----------
+   ========================================== */
+.categorie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.categoria-card {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+}
+
+.categoria-box {
+  height: 200px;
+  display: grid;
+  place-items: center; 
+  font-size: 32px;
+  font-weight: bold;
+  color: #EEEEEE; /* SCRITTE NELLE CARD: */
+  margin-bottom: 15px;
+}
+
+/* Sfondi specifici delle box categoria */
+.color-elettronica { background-color: #232F3E; } /* ELETTRONICA: #232F3E */
+.color-libri { background-color: #C45500; }        /* LIBRI: #C45500 */
+.color-abbigliamento { background-color: #146EB4; }  /* ABBIGLIAMENTO: #146EB4 */
+.color-casa { background-color: #067D62; }            /* CASA: #067D62 */
+
+.categoria-card h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.categoria-card a {
+  font-size: 13px;
+  color: #007185;
+  display: inline-block;
+}
+
+/* ==========================================
+   -----SEZIONE PRODOTTI GRIGLIA-----------
+   ========================================== */
+.prodotti-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.prodotto-card {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+}
+
+.prodotto-img-placeholder {
+  height: 220px;
+  background-color: #f0f0f0;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.prodotto-title {
+  font-size: 13px;
+  margin-bottom: 8px;
+  height: 40px; /* Mantiene l'allineamento verticale dei blocchi successivi */
+  overflow: hidden;
+}
+
+.prodotto-rating {
+  font-size: 13px;
+  color: #FF9900; /* STELLINE (Sia piene che vuote): #FF9900 */
+  margin-bottom: 8px;
+}
+
+.prodotto-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.btn-add {
+  background-color: #FFD814; /* AGGIUNGI AL CARRELLO: #FFD814 */
+  color: #111;
+  padding: 8px 0;
+  border-radius: 20px;
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  transition: background-color 0.1s ease;
+  
+}
+
+.btn-add:hover {
+  background-color: #F7CA00; /* HOVER AGGIUNGI AL CARRELLO: #F7CA00 */
+}
+
+/* ==========================================
+   ---------------FOOTER--------------------- 
+   ========================================== */
+footer {
+  background-color: #232F3E; /* FOOTER: #232F3E */
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0; /* Rimuove lo spazio bianco tra i blocchi inline */
+}
+
+.footer-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%; /* Separa lo spazio esattamente in 3 colonne */
+  text-align: left;
+  padding-left: 5%;
+  font-size: 14px; /* Ripristina la dimensione del testo originaria */
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+

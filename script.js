@@ -16,7 +16,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const prodotti = [
+ const prodotti = [
     {
         name: 'Cuffie',
         category: 'Electronica',
@@ -184,21 +184,17 @@ function filtraPerCategoria(arrayProdotti, categoriaCercata) {
 function filtraProdottiSemplice() {
   let risultati = [];
 
-  // Usiamo un ciclo for classico per scorrere i prodotti
+  // Uso un ciclo for classico per scorrere i prodotti
   for (let i = 0; i < prodotti.length; i++) {
     let prodotto = prodotti[i];
-
-    // Controlliamo direttamente il testo della disponibilità e del rating
+ // Controllo direttamente il testo della disponibilità e del rating
     if (prodotto.available === 'Disponibile' && prodotto.rating >= '4,0') {
       risultati.push(prodotto);
     }
   }
-
   return risultati;
 }
-
 const prodottiScelti = filtraProdottiSemplice();
-
 prodottiScelti.forEach(prodotto => {
   console.log(`${prodotto.name}: ${prodotto.rating} stelle`);
 });
