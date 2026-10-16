@@ -120,8 +120,10 @@ const prodotti = [
    Funzione che ritorna una stringa tipo "€ 19,99".
    Esempio in console.log: Monitor: € 150,00
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
 
 /**
  * VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
@@ -145,6 +147,19 @@ prodotti.forEach(prodotto => {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// --- Ciclo classico per scorrere i prodotti uno alla volta ----//
+
+for (let i = 0; i < prodotti.length; i++) {
+    let p = prodotti[i]; 
+    let stelline = "";
+    if (p.rating === "4,7" || p.rating === "4,6" || p.rating === "4,5" || p.rating === "4,8") {
+        stelline = "★★★★★";
+    } else {
+        stelline = "★★★★☆";
+    }
+    console.log(p.name + " → " + stelline);
+}
+
 
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
@@ -153,11 +168,50 @@ prodotti.forEach(prodotto => {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function filtraPerCategoria(arrayProdotti, categoriaCercata) {
+    return arrayProdotti.filter(prodotto => 
+        prodotto.category.toLowerCase() === categoriaCercata.toLowerCase()
+    );
+}
+
+
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function filtraProdottiSemplice() {
+  let risultati = [];
+
+  // Usiamo un ciclo for classico per scorrere i prodotti
+  for (let i = 0; i < prodotti.length; i++) {
+    let prodotto = prodotti[i];
+
+    // Controlliamo direttamente il testo della disponibilità e del rating
+    if (prodotto.available === 'Disponibile' && prodotto.rating >= '4,0') {
+      risultati.push(prodotto);
+    }
+  }
+
+  return risultati;
+}
+
+const prodottiScelti = filtraProdottiSemplice();
+
+prodottiScelti.forEach(prodotto => {
+  console.log(`${prodotto.name}: ${prodotto.rating} stelle`);
+});
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------------------------------------------------
 

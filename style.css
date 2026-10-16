@@ -53,7 +53,7 @@ header .search-bar {
   display: inline-block;
   vertical-align: middle;
   width: 55%;
-  font-size: 0; /* Rimuove lo spazio vuoto tra input e bottone */
+  font-size: 0; 
 }
 
 header .search-bar input {
@@ -158,18 +158,18 @@ main {
 .categoria-box {
   height: 200px;
   display: grid;
-  place-items: center; /* Centra il testo senza flexbox */
+  place-items: center; 
   font-size: 32px;
   font-weight: bold;
-  color: #EEEEEE; /* SCRITTE NELLE CARD: #EEEEEE */
+  color: #EEEEEE; /* SCRITTE NELLE CARD: */
   margin-bottom: 15px;
 }
 
 /* Sfondi specifici delle box categoria */
 .color-elettronica { background-color: #232F3E; } /* ELETTRONICA: #232F3E */
 .color-libri { background-color: #C45500; }        /* LIBRI: #C45500 */
-.color-abbigliamento { background-color: #146EB4; } /* ABBIGLIAMENTO: #146EB4 */
-.color-casa { background-color: #067D62; }         /* CASA: #067D62 */
+.color-abbigliamento { background-color: #146EB4; }  /* ABBIGLIAMENTO: #146EB4 */
+.color-casa { background-color: #067D62; }            /* CASA: #067D62 */
 
 .categoria-card h3 {
   font-size: 15px;
