@@ -22,68 +22,98 @@ const prodotti = [
         category: 'Electronica',
         price: '89,99',
         rating: '4,2',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
     },
     {
         name: 'Tablet',
         category: 'Electronics',
         price: '119,00',
         rating: '4,7',
-        image: 'Unavaible',
-        avaible: 'Non disponibile',
+        image: 'Unavailable',
+        available: 'Non disponibile',
     },
     {
         name: 'Libro',
         category: 'Books',
         price: '14,90',
         rating: '4,0',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
     },
     {
         name: 'Zaino',
         category: 'Scuola',
         price: '49,99',
         rating: '4,2',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
     },
     {
         name: 'Lampada',
         category: 'Home',
         price: '29,50',
         rating: '3,8',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
     },
     {
         name: 'Smartwatch',
         category: 'Electronics',
         price: '119,00',
         rating: '4,4',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
     },
     {
         name: 'Mouse',
         category: 'Electronics',
         price: '24,90',
         rating: '4,1',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
     },
     {
         name: 'Caffettiera',
         category: 'Home',
         price: '22,00',
         rating: '4,6',
-        image: 'Unavaible',
-        avaible: 'Disponibile',
+        image: 'Unavailable',
+        available: 'Disponibile',
+    },
+    {
+        name: 'Giacca a Vento',
+        category: 'Clothing',
+        price: '120,00',
+        rating: '4,5',
+        image: 'Unavailable',
+        available: 'Disponibile',
+    },
+    {
+        name: 'Set Cacciaviti Professionali',
+        category: 'Tools',
+        price: '27,90',
+        rating: '4,3',
+        image: 'Unavailable',
+        available: 'Disponibile',
+    },
+    {
+        name: 'Croccantini Gatto 5kg',
+        category: 'Pet Supplies',
+        price: '32,50',
+        rating: '4,8',
+        image: 'Unavailable',
+        available: 'Non disponibile',
+    },
+    {
+        name: 'Gioco da Tavolo Strategy',
+        category: 'Toys & Games',
+        price: '44,99',
+        rating: '4,6',
+        image: 'Unavailable',
+        available: 'Disponibile',
     }
-];
-
-
+]; 
 
 
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
@@ -93,6 +123,19 @@ const prodotti = [
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+/**
+ * VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
+ * Funzione che ritorna una stringa tipo "€ 19,99".
+ */
+
+function formattaPrezzo(prezzo) {
+    return `€ ${prezzo}`;
+}
+prodotti.forEach(prodotto => {
+    console.log(`${prodotto.name}: ${formattaPrezzo(prodotto.price)}`);
+});
+
+
 
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
@@ -101,6 +144,8 @@ const prodotti = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
