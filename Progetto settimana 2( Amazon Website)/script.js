@@ -121,6 +121,10 @@ REGOLE
    Esempio in console.log: Monitor: € 150,00
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+function formattaPrezzo(prezzoStr) {
+    return `€ ${prezzoStr}`;
+}
+console.log(`Monitor: ${formattaPrezzo('150,00')}`);
 
 
 
@@ -134,11 +138,9 @@ REGOLE
 function formattaPrezzo(prezzo) {
     return `€ ${prezzo}`;
 }
-prodotti.forEach(prodotto => {
+for (const prodotto of prodotti) {
     console.log(`${prodotto.name}: ${formattaPrezzo(prodotto.price)}`);
-});
-
-
+}
 
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
@@ -217,7 +219,8 @@ prodottiScelti.forEach(prodotto => {
    Niente HTML hard-coded per i prodotti: tutto generato dal JavaScript.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA */ 
+
 
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
