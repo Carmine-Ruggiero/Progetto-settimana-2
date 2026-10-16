@@ -125,6 +125,7 @@ REGOLE
 
 
 
+
 /**
  * VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
  * Funzione che ritorna una stringa tipo "€ 19,99".
