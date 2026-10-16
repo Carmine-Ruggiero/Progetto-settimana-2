@@ -16,6 +16,75 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const prodotti = [
+    {
+        name: 'Cuffie',
+        category: 'Electronica',
+        price: '89,99',
+        rating: '4,2',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    },
+    {
+        name: 'Tablet',
+        category: 'Electronics',
+        price: '119,00',
+        rating: '4,7',
+        image: 'Unavaible',
+        avaible: 'Non disponibile',
+    },
+    {
+        name: 'Libro',
+        category: 'Books',
+        price: '14,90',
+        rating: '4,0',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    },
+    {
+        name: 'Zaino',
+        category: 'Scuola',
+        price: '49,99',
+        rating: '4,2',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    },
+    {
+        name: 'Lampada',
+        category: 'Home',
+        price: '29,50',
+        rating: '3,8',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    },
+    {
+        name: 'Smartwatch',
+        category: 'Electronics',
+        price: '119,00',
+        rating: '4,4',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    },
+    {
+        name: 'Mouse',
+        category: 'Electronics',
+        price: '24,90',
+        rating: '4,1',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    },
+    {
+        name: 'Caffettiera',
+        category: 'Home',
+        price: '22,00',
+        rating: '4,6',
+        image: 'Unavaible',
+        avaible: 'Disponibile',
+    }
+];
+
+
+
 
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
    Funzione che ritorna una stringa tipo "€ 19,99".
